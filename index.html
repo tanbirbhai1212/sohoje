@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>সহজে - শ্রেণি ১ থেকে ১২ পর্যন্ত প্রশ্ন ও উত্তর</title>
+    <meta
+      name="description"
+      content="বাংলাদেশের ১ম থেকে ১২শ শ্রেণির শিক্ষার্থীদের জন্য বাংলা ভাষায় শ্রেণি ও বিষয়ভিত্তিক প্রশ্ন-উত্তর।"
+    />
+    <meta name="theme-color" content="#1d4ed8" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="icons/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="topbar__brand" href="#/">
+        <span class="topbar__logo">স</span>
+        <span>
+          <strong>সহজে</strong>
+          <small>১ম–১২শ শ্রেণির প্রশ্ন ও উত্তর</small>
+        </span>
+      </a>
+      <form class="topbar__search" id="search-form" role="search">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="প্রশ্ন খুঁজুন... (যেমন: সালোকসংশ্লেষণ)"
+          aria-label="প্রশ্ন খুঁজুন"
+        />
+        <button type="submit">খুঁজুন</button>
+      </form>
+    </header>
+
+    <main id="app" aria-live="polite"></main>
+
+    <footer class="footer">
+      <p>
+        © <span id="year"></span> সহজে — বাংলাদেশের শিক্ষার্থীদের জন্য বাংলা ভাষায় সহজ
+        প্রশ্ন-উত্তর
+      </p>
+    </footer>
+
+    <!-- শ্রেণিভিত্তিক প্রশ্ন-উত্তরের ডেটা: নতুন প্রশ্ন যোগ করতে data/ ফোল্ডারের ফাইল সম্পাদনা করুন -->
+    <script src="data/class-1.js"></script>
+    <script src="data/class-2.js"></script>
+    <script src="data/class-3.js"></script>
+    <script src="data/class-4.js"></script>
+    <script src="data/class-5.js"></script>
+    <script src="data/class-6.js"></script>
+    <script src="data/class-7.js"></script>
+    <script src="data/class-8.js"></script>
+    <script src="data/class-9.js"></script>
+    <script src="data/class-10.js"></script>
+    <script src="data/class-11.js"></script>
+    <script src="data/class-12.js"></script>
+    <script src="app.js"></script>
+    <script>
+      // অ্যাপ হিসেবে ইনস্টল ও অফলাইন সাপোর্টের জন্য সার্ভিস ওয়ার্কার
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js');
+      }
+    </script>
+  </body>
+</html>

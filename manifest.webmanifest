@@ -1,0 +1,16 @@
+{
+  "name": "সহজে — ১ম থেকে ১২শ শ্রেণির প্রশ্ন ও উত্তর",
+  "short_name": "সহজে",
+  "description": "বাংলাদেশের ১ম থেকে ১২শ শ্রেণির শিক্ষার্থীদের জন্য বাংলা ভাষায় শ্রেণি ও বিষয়ভিত্তিক প্রশ্ন-উত্তর।",
+  "lang": "bn",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f5f9ff",
+  "theme_color": "#1d4ed8",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
