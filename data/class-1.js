@@ -121,4 +121,13 @@ window.SOHOJE_DATA.push({
       ],
     },
   ],
+  books: {
+    url: 'https://nctb.gov.bd/pages/static-pages/695b9adec4774958d7b708cd',
+    groups: [
+      {
+        name: 'প্রথম শ্রেণির পাঠ্যবই',
+        items: ['আমার বাংলা বই', 'English for Today', 'প্রাথমিক গণিত'],
+      },
+    ],
+  },
 });

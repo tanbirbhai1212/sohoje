@@ -119,4 +119,13 @@ window.SOHOJE_DATA.push({
       ],
     },
   ],
+  books: {
+    url: 'https://nctb.gov.bd/pages/static-pages/695b9935c4774958d7b70508',
+    groups: [
+      {
+        name: 'দ্বিতীয় শ্রেণির পাঠ্যবই',
+        items: ['আমার বাংলা বই', 'English for Today', 'প্রাথমিক গণিত'],
+      },
+    ],
+  },
 });

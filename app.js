@@ -109,8 +109,34 @@ function renderClass(classId) {
         <p>বিষয় বেছে নাও — প্রতিটি বিষয়ে অধ্যায় অনুযায়ী প্রশ্ন-উত্তর আছে।</p>
       </header>
       <div class="subject-grid">${subjects}</div>
+      ${renderBooks(cls)}
       ${renderClassNav(cls.id)}
     </div>`;
+}
+
+function renderBooks(cls) {
+  if (!cls.books) return '';
+  const groups = cls.books.groups
+    .map(
+      (group) => `
+        <div class="books__group">
+          <h3>${group.name}</h3>
+          <ul class="books__list">
+            ${group.items.map((book) => `<li>📕 ${book}</li>`).join('')}
+          </ul>
+        </div>`
+    )
+    .join('');
+  return `
+    <section class="books">
+      <h2>📚 অফিসিয়াল পাঠ্যবই (এনসিটিবি)</h2>
+      <p class="books__intro">২০২৬ শিক্ষাবর্ষের জন্য জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ডের (এনসিটিবি) বই:</p>
+      ${groups}
+      ${cls.books.note ? `<p class="books__note">${cls.books.note}</p>` : ''}
+      <a class="btn-download" href="${cls.books.url}" target="_blank" rel="noopener">
+        ⬇️ সব বইয়ের পিডিএফ ডাউনলোড করো (এনসিটিবির ওয়েবসাইট)
+      </a>
+    </section>`;
 }
 
 function renderClassNav(currentId) {
